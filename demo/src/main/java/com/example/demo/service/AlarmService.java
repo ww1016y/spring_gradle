@@ -73,7 +73,6 @@ public class AlarmService {
         if (sendList.size() == 0) {
             //없으면 종료
             System.out.println("오늘은 공모주 일정이 없습니다.");
-            System.out.println("오늘은 공모주 일정이 없습니다.");
             chatService.slack(sendList, today);
             return;
         } else {

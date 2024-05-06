@@ -79,7 +79,7 @@ public class StockController {
         System.out.println(stocks.get(0));
         System.out.println(stocks.get(1));
         System.out.println(stocks.get(2));
-
+        System.out.println(stocks.get(2));
         test.updateArtist("OOO");
 //        for (StockEntity stock : stocks){
 //
