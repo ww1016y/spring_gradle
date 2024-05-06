@@ -31,7 +31,7 @@ public class StockController {
 
     @GetMapping("artist")
     public ResponseEntity<List<StockEntity>> getartist() {
-
+        System.out.println("test");
         List<StockEntity> stocks = stockService.getartist("aespa");
         return new ResponseEntity<>(stocks, HttpStatus.OK);
     }
@@ -59,7 +59,7 @@ public class StockController {
 
     @GetMapping("rank1")
     public ResponseEntity<List<StockEntity>> getrank1() {
-
+        System.out.println("test");
         List<StockEntity> stocks = stockService.getdata(1);
         for (StockEntity stock : stocks){
 
@@ -77,10 +77,8 @@ public class StockController {
 
         StockEntity test = stocks.get(0);
         System.out.println(stocks.get(0));
-        System.out.println(stocks.get(1));
-        System.out.println(stocks.get(1));
-        System.out.println(stocks.get(1));
-
+        System.out.println(stocks.get(2));
+        System.out.println(stocks.get(2));
         test.updateArtist("OOO");
 //        for (StockEntity stock : stocks){
 //
